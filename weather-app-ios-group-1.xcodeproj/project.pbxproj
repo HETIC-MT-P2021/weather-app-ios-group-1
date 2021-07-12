@@ -13,6 +13,8 @@
 		7BA9BCBB269C401700E20E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9BCB9269C401700E20E61 /* Main.storyboard */; };
 		7BA9BCBD269C401A00E20E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9BCBC269C401A00E20E61 /* Assets.xcassets */; };
 		7BA9BCC0269C401A00E20E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA9BCBE269C401A00E20E61 /* LaunchScreen.storyboard */; };
+		98FFED9C269C8231008DC4C6 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFED9B269C8231008DC4C6 /* NetworkManagerProtocol.swift */; };
+		98FFED9E269C8249008DC4C6 /* WeatherNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFED9D269C8249008DC4C6 /* WeatherNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		7BA9BCBC269C401A00E20E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BA9BCBF269C401A00E20E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BA9BCC1269C401A00E20E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FFED9B269C8231008DC4C6 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		98FFED9D269C8249008DC4C6 /* WeatherNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkManager.swift; sourceTree = "<group>"; };
+		98FFED9F269C874D008DC4C6 /* Contributing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Contributing.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,8 @@
 		7BA9BCA7269C401700E20E61 = {
 			isa = PBXGroup;
 			children = (
+				98FFED9F269C874D008DC4C6 /* Contributing.md */,
+				98FFED9A269C81EE008DC4C6 /* NetworkManager */,
 				7BA9BCB2269C401700E20E61 /* weather-app-ios-group-1 */,
 				7BA9BCB1269C401700E20E61 /* Products */,
 			);
@@ -65,6 +72,15 @@
 				7BA9BCC1269C401A00E20E61 /* Info.plist */,
 			);
 			path = "weather-app-ios-group-1";
+			sourceTree = "<group>";
+		};
+		98FFED9A269C81EE008DC4C6 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				98FFED9B269C8231008DC4C6 /* NetworkManagerProtocol.swift */,
+				98FFED9D269C8249008DC4C6 /* WeatherNetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +155,9 @@
 			files = (
 				7BA9BCB8269C401700E20E61 /* ViewController.swift in Sources */,
 				7BA9BCB4269C401700E20E61 /* AppDelegate.swift in Sources */,
+				98FFED9C269C8231008DC4C6 /* NetworkManagerProtocol.swift in Sources */,
 				7BA9BCB6269C401700E20E61 /* SceneDelegate.swift in Sources */,
+				98FFED9E269C8249008DC4C6 /* WeatherNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L22X7NYZC;
 				INFOPLIST_FILE = "weather-app-ios-group-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L22X7NYZC;
 				INFOPLIST_FILE = "weather-app-ios-group-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
