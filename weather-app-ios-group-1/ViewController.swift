@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var allWheaters = [Weather]()
+    var allWheaters = [WeatherModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

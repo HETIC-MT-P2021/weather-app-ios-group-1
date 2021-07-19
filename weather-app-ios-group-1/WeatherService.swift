@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-typealias CallbackWeathers = ([Weather]) -> Void
+typealias CallbackWeathers = ([WeatherModel]) -> Void
 
 class WeatherService {
     
@@ -21,8 +21,9 @@ class WeatherService {
         
         alamofireSession.request(url).responseData { (response) in
             switch response.result {
+            
             case .success(let data):
-                
+debugPrint(data)
                 do {
                     let jsonDecoder = JSONDecoder()
                     
