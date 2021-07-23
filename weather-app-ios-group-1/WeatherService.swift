@@ -10,6 +10,17 @@ import Alamofire
 
 typealias CallbackWeathers = ([WeatherModel]) -> Void
 
+extension DateFormatter {
+    static let fullISO8601: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
+}
+
 class WeatherService {
     
     static let alamofireSession = Alamofire.Session.init()
@@ -26,6 +37,8 @@ class WeatherService {
 debugPrint(data)
                 do {
                     let jsonDecoder = JSONDecoder()
+                    jsonDecoder.dateDecodingStrategy = .formatted(DateFormatter.fullISO8601)
+
                     
                     let weatherResult = try jsonDecoder.decode(WeatherResult.self, from: data)
                     

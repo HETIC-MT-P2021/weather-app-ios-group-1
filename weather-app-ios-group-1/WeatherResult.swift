@@ -7,17 +7,18 @@
 
 import Foundation
 
+
 struct WeatherModel: Decodable {
     let main: Main?
     let weather: Weather?
     let wind: Wind?
-    let dt_txt: String
+    let dtTxt: Date
     
     enum CodingKeys: String, CodingKey {
         case main
         case weather
         case wind
-        case dt_txt
+        case dtTxt = "dt_txt"
     }
     
     init(from decoder: Decoder) throws {
@@ -25,7 +26,7 @@ struct WeatherModel: Decodable {
         main = try container.decodeIfPresent(Main.self, forKey: .main)
         weather = try container.decodeIfPresent(Weather.self, forKey: .weather)
         wind = try container.decodeIfPresent(Wind.self, forKey: .wind)
-        dt_txt = try container.decode(String.self, forKey: .dt_txt)
+        dtTxt = try container.decode(Date.self, forKey: .dtTxt)
     }
 }
 
