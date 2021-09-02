@@ -6,6 +6,6 @@ target 'weather-app-ios-group-1' do
   use_frameworks!
 
   # Pods for weather-app-ios-group-1
-  pod “Alamofire”
+  pod 'Alamofire'
 
 end
