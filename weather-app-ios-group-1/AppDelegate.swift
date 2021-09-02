@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  weather-app-ios-group-1
 //
-//  Created by Jean-Jacques Akakpo on 12/07/2021.
+//  Created by jack Maarek on 02/09/2021.
 //
 
 import UIKit
