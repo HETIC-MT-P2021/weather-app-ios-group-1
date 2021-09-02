@@ -12,6 +12,7 @@ The following make commands are available :
 | **make setup**| Setup the whole project by adding `githooks` and installing `pod` dependencies. |
 | **make lint**| Perform a lint stage using `swiftlint.yml`. |
 | **make lint-fix**| Automatically fix linting issues. |
+| **make swiftformat**| Automatically format files. |
 
 ## 👥 Contributing
 
@@ -50,7 +51,9 @@ The naming of the PR should follow the same rules as the [COMMIT_CONVENTIONS](CO
 
 ### 🎮 Technical Choices
 
-(Coming soon 🏋️‍♂️)
+#### Linter
+[swiftLint](https://github.com/realm/SwiftLint)
+[swiftformat](https://github.com/nicklockwood/SwiftFormat)
 
 ### 🏄‍♂️ Authors
 

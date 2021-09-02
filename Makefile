@@ -8,3 +8,6 @@ lint:
 
 lint-fix:
 	swiftlint --fix
+
+format:
+	swiftformat ./
