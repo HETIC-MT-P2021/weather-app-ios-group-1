@@ -9,7 +9,9 @@ The following make commands are available :
 
 |command|description|
 |-|-|
-| **make setup**| Setup the whole project by adding `githooks` and installing `pod` dependencies |
+| **make setup**| Setup the whole project by adding `githooks` and installing `pod` dependencies. |
+| **make lint**| Perform a lint stage using `swiftlint.yml`. |
+| **make lint-fix**| Automatically fix linting issues. |
 
 ## 👥 Contributing
 
