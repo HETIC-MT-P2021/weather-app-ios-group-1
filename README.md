@@ -9,7 +9,7 @@ The following make commands are available :
 
 |command|description|
 |-|-|
-| **make setup**| setup the whole project by adding `githooks` and installing `pod` dependencies |
+| **make setup**| Setup the whole project by adding `githooks` and installing `pod` dependencies |
 
 ## 👥 Contributing
 
