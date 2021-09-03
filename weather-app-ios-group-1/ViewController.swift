@@ -8,19 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ApiService().getCurrentForecast(lat: 0, long: 0) { result in
-            switch result {
-            case nil:
-                print("fuck")
-            default:
-                guard let current = result else {/*ERROR CODE HERE*/ return}
-                print(current.weather[0].weatherDescription)
-            }
+        ApiService().getCurrentForecast(lat: 49.184719, long: -0.360310) { current in
+            debugPrint(current)
         }
 
+        ApiService().getNextDailyForecast(lat: 49.184719, long: -0.360310) { daily in
+            debugPrint(daily)
+        }
     }
 }
