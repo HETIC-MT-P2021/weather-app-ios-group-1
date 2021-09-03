@@ -1,10 +1,3 @@
-//
-//  ApiService.swift
-//  weather-app-ios-group-1
-//
-//  Created by Jean-Jacques Akakpo on 02/09/2021.
-//
-
 import Alamofire
 import Foundation
 

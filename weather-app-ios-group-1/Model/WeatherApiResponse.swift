@@ -2,12 +2,13 @@
 //  WeatherApiResponse.swift
 //  weather-app-ios-group-1
 //
-//  Created by Jean-Jacques Akakpo on 02/09/2021.
+//  Created by jack Maarek on 03/09/2021.
 //
 
 import Foundation
 
 // MARK: - WeatherAPIResponse
+
 struct WeatherAPIResponse: Codable {
     let lat, lon: Double
     let current: Current
@@ -20,6 +21,7 @@ struct WeatherAPIResponse: Codable {
 }
 
 // MARK: - Current
+
 struct Current: Codable {
     let dt, sunrise, sunset: Int
     let temp, feelsLike: Double
@@ -37,6 +39,7 @@ struct Current: Codable {
 }
 
 // MARK: - Weather
+
 struct Weather: Codable {
     let id: Int
     let main, weatherDescription, icon: String
@@ -49,6 +52,7 @@ struct Weather: Codable {
 }
 
 // MARK: - Daily
+
 struct Daily: Codable {
     let dt: Int
     let temp: Temp
@@ -62,11 +66,13 @@ struct Daily: Codable {
 }
 
 // MARK: - FeelsLike
+
 struct FeelsLike: Codable {
     let day, night, eve, morn: Double
 }
 
 // MARK: - Temp
+
 struct Temp: Codable {
     let day, min, max, night: Double
     let eve, morn: Double

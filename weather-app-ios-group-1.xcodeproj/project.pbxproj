@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0934337F26E24D1E0055A9F1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934337E26E24D1E0055A9F1 /* ApiService.swift */; };
+		0934338126E24D620055A9F1 /* WeatherApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934338026E24D620055A9F1 /* WeatherApiResponse.swift */; };
 		0986217026E0DAA200B1A4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986216F26E0DAA200B1A4DB /* AppDelegate.swift */; };
 		0986217226E0DAA200B1A4DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986217126E0DAA200B1A4DB /* SceneDelegate.swift */; };
 		0986217426E0DAA200B1A4DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986217326E0DAA200B1A4DB /* ViewController.swift */; };
@@ -14,11 +16,11 @@
 		0986217926E0DAA300B1A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0986217826E0DAA300B1A4DB /* Assets.xcassets */; };
 		0986217C26E0DAA300B1A4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0986217A26E0DAA300B1A4DB /* LaunchScreen.storyboard */; };
 		14D598C45034123694438D78 /* Pods_weather_app_ios_group_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91B69F41CAF51B3DF4D5622 /* Pods_weather_app_ios_group_1.framework */; };
-		7BC6E2B426E21BD3008EC5D4 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6E2B326E21BD3008EC5D4 /* ApiService.swift */; };
-		7BC6E2B626E21BE6008EC5D4 /* WeatherApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6E2B526E21BE6008EC5D4 /* WeatherApiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0934337E26E24D1E0055A9F1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		0934338026E24D620055A9F1 /* WeatherApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiResponse.swift; sourceTree = "<group>"; };
 		0986216C26E0DAA200B1A4DB /* weather-app-ios-group-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weather-app-ios-group-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0986216F26E0DAA200B1A4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0986217126E0DAA200B1A4DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		0986217826E0DAA300B1A4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0986217B26E0DAA300B1A4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0986217D26E0DAA300B1A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BC6E2B326E21BD3008EC5D4 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApiService.swift; path = "/Users/gensjaak/Projects/hetic/weathapp/weather-app-ios-group-1/ApiService.swift"; sourceTree = "<absolute>"; };
-		7BC6E2B526E21BE6008EC5D4 /* WeatherApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherApiResponse.swift; path = Model/WeatherApiResponse.swift; sourceTree = "<group>"; };
 		F1786828E65BC7587F8C5345 /* Pods-weather-app-ios-group-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather-app-ios-group-1.release.xcconfig"; path = "Target Support Files/Pods-weather-app-ios-group-1/Pods-weather-app-ios-group-1.release.xcconfig"; sourceTree = "<group>"; };
 		F690843A6D0C5E070E314787 /* Pods-weather-app-ios-group-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather-app-ios-group-1.debug.xcconfig"; path = "Target Support Files/Pods-weather-app-ios-group-1/Pods-weather-app-ios-group-1.debug.xcconfig"; sourceTree = "<group>"; };
 		F91B69F41CAF51B3DF4D5622 /* Pods_weather_app_ios_group_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather_app_ios_group_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0934337B26E24CDE0055A9F1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0934337E26E24D1E0055A9F1 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0934337D26E24D070055A9F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0934338026E24D620055A9F1 /* WeatherApiResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0986216326E0DAA200B1A4DB = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +83,9 @@
 		0986216E26E0DAA200B1A4DB /* weather-app-ios-group-1 */ = {
 			isa = PBXGroup;
 			children = (
+				0934337D26E24D070055A9F1 /* Model */,
+				0934337B26E24CDE0055A9F1 /* Service */,
 				0986216F26E0DAA200B1A4DB /* AppDelegate.swift */,
-				7BC6E2B326E21BD3008EC5D4 /* ApiService.swift */,
-				7BC6E2B526E21BE6008EC5D4 /* WeatherApiResponse.swift */,
 				0986217126E0DAA200B1A4DB /* SceneDelegate.swift */,
 				0986217326E0DAA200B1A4DB /* ViewController.swift */,
 				0986217526E0DAA200B1A4DB /* Main.storyboard */,
@@ -211,10 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC6E2B626E21BE6008EC5D4 /* WeatherApiResponse.swift in Sources */,
+				0934338126E24D620055A9F1 /* WeatherApiResponse.swift in Sources */,
 				0986217426E0DAA200B1A4DB /* ViewController.swift in Sources */,
 				0986217026E0DAA200B1A4DB /* AppDelegate.swift in Sources */,
-				7BC6E2B426E21BD3008EC5D4 /* ApiService.swift in Sources */,
+				0934337F26E24D1E0055A9F1 /* ApiService.swift in Sources */,
 				0986217226E0DAA200B1A4DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
