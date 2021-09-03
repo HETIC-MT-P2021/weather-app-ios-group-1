@@ -19,20 +19,11 @@ class ApiService {
     }
 
     // getCurrentForecast doc
-    func getCurrentForecast(lat: Double, long: Double, completionHandler: @escaping (Current) -> Void) {
+    func getCurrentForecast(lat: Double, long: Double, completionHandler: @escaping (WeatherAPIResponse) -> Void) {
         let parameters = buildParameters(lat: lat, long: long)
 
         performRequest(url: url, params: parameters, completion: { weatherAPIResponse in
-            completionHandler(weatherAPIResponse.current)
-        })
-    }
-
-    // getNextDailyForecast doc
-    func getNextDailyForecast(lat: Double, long: Double, completionHandler: @escaping ([Daily]) -> Void) {
-        let parameters = buildParameters(lat: lat, long: long)
-
-        performRequest(url: url, params: parameters, completion: { weatherAPIResponse in
-            completionHandler(weatherAPIResponse.daily)
+            completionHandler(weatherAPIResponse)
         })
     }
 
