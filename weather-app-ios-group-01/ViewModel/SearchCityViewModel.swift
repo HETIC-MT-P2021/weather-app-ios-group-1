@@ -26,7 +26,7 @@ class SearchCityViewModel: ObservableObject {
         case .none:
             EmptyView()
         default:
-            CityDetailsView(viewModel: CityViewModel(item: cityData!))
+            CityDetailsView(viewModel: CityViewModel(item: cityData!, city: city))
         }
     }
 
