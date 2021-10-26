@@ -17,17 +17,17 @@ struct CityDetailsView: View {
     var body: some View {
         VStack {
             Text(viewModel.cityName)
-            Text(viewModel.date)
-                .font(.headline)
-            Spacer()
-            Image(systemName: "drop")
-                .foregroundColor(.blue)
-                .scaledToFit()
+                .font(.title)
+            Image(viewModel.icon)
+                .scaledToFill()
+                .colorInvert()
             Text(viewModel.temperature + "°C")
             Text("Ressenti " + viewModel.feelsLike + "°C")
                 .bold()
-            Image(viewModel.icon)
-                .scaledToFill()
+            Spacer()
+
+            Text(viewModel.date)
+                .font(.headline)
         }
     }
 }
