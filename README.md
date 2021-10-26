@@ -2,7 +2,7 @@
 
 This weather app is one of best free weather apps. Its so easy to receive the weather conditions in your current location. Realtime temperature, humidity, pressure and wind direction are all in the weather app based.
 
-## Requirements
+## 🔗 Requirements
  - Swift:  v5.5
  - Swiftlint: 0.43.1
  - Swiftformat: 0.48.1
@@ -47,7 +47,7 @@ The naming of the PR should follow the same rules as the [COMMIT_CONVENTIONS](CO
 - Search Cities with autocompletion
 - Fetch Weather depending on the selected city.
 
-### 👨‍💻 Development mode
+## 👨‍💻 Development mode
 
 1. Most of the time a ticket is assigned ,on the project board, to a team member. If it is not the case and you are told to do it yourself, assign the github ticket to you. 
 2. When you start working on the ticket, move the concerned ticket to `In Progress`.
@@ -60,13 +60,13 @@ The naming of the PR should follow the same rules as the [COMMIT_CONVENTIONS](CO
 9. Your pull request will then be merged into the develop branch and the concerned ticket will be moved to `Done`
 
 
-### 🎮 Technical Choices
+## 🎮 Technical Choices
 
-#### Git Hooks
+### 🪝 Git Hooks
 
 Git hooks are placed in `.git/hooks`. The only existing hook for now is a pre-commit hook that will run `swiftLint & swiftformat` command.
 
-#### Continuous Integration (CI)
+### 🛠 Continuous Integration (CI)
 
 A CI pipeline is configured for this project.
 
@@ -77,11 +77,11 @@ The pipeline will run 4 different jobs:
 - Build
 - Tests
 
-#### Linter
+### 🔬 Linter
 - [swiftLint](https://github.com/realm/SwiftLint)
 - [swiftformat](https://github.com/nicklockwood/SwiftFormat)
 
-### 🏄‍♂️ Authors
+## 🏄‍♂️ Authors
 
 <table align="center">
   <tr>
