@@ -16,6 +16,7 @@ struct CityDetailsView: View {
 
     var body: some View {
         VStack {
+            Text(viewModel.cityName)
             Text(viewModel.date)
                 .font(.headline)
             Spacer()
