@@ -2,6 +2,10 @@
 
 This weather app is one of best free weather apps. Its so easy to receive the weather conditions in your current location. Realtime temperature, humidity, pressure and wind direction are all in the weather app based.
 
+## 🔗 Requirements
+ - Swift:  v5.5
+ - Swiftlint: 0.43.1
+ - Swiftformat: 0.48.1
 
 ## 🔥 Setup
 
@@ -9,7 +13,7 @@ The following make commands are available :
 
 |command|description|
 |-|-|
-| **make setup**| Setup the whole project by adding `githooks` and installing `pod` dependencies. |
+| **make setup**| Setup the whole project by adding `githooks` and installing `pod` dependencies. (Notice: This won't install the requirements specified above)|
 | **make lint**| Perform a lint stage using `swiftlint.yml`. |
 | **make lint-fix**| Automatically fix linting issues. |
 | **make swiftformat**| Automatically format files. |
@@ -39,23 +43,45 @@ The naming of the PR should follow the same rules as the [COMMIT_CONVENTIONS](CO
 
 ## 🌈 Features
 
-(Coming soon 🏋️‍♂️)
+- Fetch Weather depending on your current location
+- Search Cities with autocompletion
+- Fetch Weather depending on the selected city.
 
-## ✨ Demo video available
+## 👨‍💻 Development mode
 
-(Coming soon 🏋️‍♂️)
+1. Most of the time a ticket is assigned ,on the project board, to a team member. If it is not the case and you are told to do it yourself, assign the github ticket to you. 
+2. When you start working on the ticket, move the concerned ticket to `In Progress`.
+3. Create a branch specifically for this ticket with a name that follows the [conventions specified below](#branch-naming-convention).
+4. Commit regularly at each significant step with unambiguous commit messages (see [COMMIT_CONVENTIONS](COMMIT_CONVENTIONS.md) file).
+5. Create a merge request that follows the [conventions specified below](#pull-requests-pr) to the develop branch.
+6. On the project board, move the ticket to the status `In Review`
+7. Request a review from another team member.
+8. It may take some back and forth before your pull request is validated
+9. Your pull request will then be merged into the develop branch and the concerned ticket will be moved to `Done`
 
-### 👨‍💻 Development mode
 
-(Coming soon 🏋️‍♂️)
+## 🎮 Technical Choices
 
-### 🎮 Technical Choices
+### 🪝 Git Hooks
 
-#### Linter
-[swiftLint](https://github.com/realm/SwiftLint)
-[swiftformat](https://github.com/nicklockwood/SwiftFormat)
+Git hooks are placed in `.git/hooks`. The only existing hook for now is a pre-commit hook that will run `swiftLint & swiftformat` command.
 
-### 🏄‍♂️ Authors
+### 🛠 Continuous Integration (CI)
+
+A CI pipeline is configured for this project.
+
+The pipeline will run 4 different jobs:
+
+- Dependencies check
+- Linter
+- Build
+- Tests
+
+### 🔬 Linter
+- [swiftLint](https://github.com/realm/SwiftLint)
+- [swiftformat](https://github.com/nicklockwood/SwiftFormat)
+
+## 🏄‍♂️ Authors
 
 <table align="center">
   <tr>
