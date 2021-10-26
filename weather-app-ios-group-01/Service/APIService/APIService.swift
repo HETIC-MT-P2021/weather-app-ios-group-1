@@ -9,7 +9,8 @@ import Alamofire
 import Foundation
 
 enum APIGlobals {
-    static let lang: String = "fr"
+
+    static let lang: String = "en"
     static let oneCallUrl: String = "https://api.openweathermap.org/data/2.5/onecall"
     static let cityCallUrl: String = "https://api.openweathermap.org/data/2.5/weather"
     static let exclude: String = "minutely,hourly,alerts"

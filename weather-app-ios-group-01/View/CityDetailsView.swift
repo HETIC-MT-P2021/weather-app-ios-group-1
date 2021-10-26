@@ -23,7 +23,8 @@ struct CityDetailsView: View {
                 .foregroundColor(.blue)
                 .scaledToFit()
             Text(viewModel.temperature + "°C")
-            Text("Ressenti " + viewModel.feelsLike + "°C")
+
+            Text("Feels like " + viewModel.feelsLike + "°C")
                 .bold()
             Image(viewModel.icon)
                 .scaledToFill()

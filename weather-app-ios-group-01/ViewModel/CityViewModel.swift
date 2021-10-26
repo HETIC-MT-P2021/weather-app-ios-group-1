@@ -21,6 +21,7 @@ struct CityViewModel: Identifiable {
         return day + month
     }
 
+
     var date: String {
         return day + " " + month
     }
