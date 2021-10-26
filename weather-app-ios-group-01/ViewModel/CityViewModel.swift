@@ -11,15 +11,22 @@ import SwiftUI
 struct CityViewModel: Identifiable {
     private let item: CityAPIResponse
     private let dateTime: Date
+    private let city: String
 
-    init(item: CityAPIResponse) {
+    init(item: CityAPIResponse, city: String) {
         self.item = item
+        self.city = city
         dateTime = Date(timeIntervalSince1970: TimeInterval(item.dt))
+    }
+
+    var cityName: String {
+        return city
     }
 
     var id: String {
         return day + month
     }
+
 
     var date: String {
         return day + " " + month

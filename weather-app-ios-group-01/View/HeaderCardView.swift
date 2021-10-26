@@ -45,7 +45,8 @@ struct HeaderCardView: View {
                             .foregroundColor(.black)
                             .font(.system(size: 14))
 
-                        Text("Ressenti \(viewModel.feelsLike)°C")
+
+                        Text("Feels like \(viewModel.feelsLike)°C")
                             .foregroundColor(.black)
                             .font(.system(size: 14))
                     }

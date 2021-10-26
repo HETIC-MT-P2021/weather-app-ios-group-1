@@ -21,7 +21,9 @@ struct ContentView: View {
             VStack {
                 Group {
                     HStack {
-                        Text("WHERETHER ⛅️")
+
+                        Text("WEATHER ⛅️")
+
                             .padding(20)
                         Spacer()
                         HStack {
